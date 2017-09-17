@@ -5,6 +5,8 @@ package com.example.abcc.prism;
  */
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Application;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.icu.util.Calendar;
@@ -97,7 +99,7 @@ public class Prism extends AppCompatActivity {
 
                 CharSequence colors[] = new CharSequence[] {"red", "green", "blue", "black"};
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(getApplication().getApplicationContext());
+                AlertDialog.Builder builder = new AlertDialog.Builder(Prism.this);
                 builder.setTitle("Pick a color");
                 builder.setItems(colors, new DialogInterface.OnClickListener() {
                     @Override
@@ -110,8 +112,8 @@ public class Prism extends AppCompatActivity {
         });
 
 
-
     }
+
 
 
     //if any of the project is checked it wil go to content layout where user have to fill the timesheet
