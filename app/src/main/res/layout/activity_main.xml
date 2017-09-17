@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:paddingTop="5dp"
+    tools:context="com.example.abcc.prism.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="UserName"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#404040"
+            android:textStyle="bold"
+            />
+
+
+        <EditText
+            android:id="@+id/editNTID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:hint="NTID"
+            android:paddingTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall">
+
+
+        </EditText>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Password"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#404040"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall">
+
+        </EditText>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Security Key"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#404040"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/editsecurityCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:hint="Verification Code"
+            android:paddingTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancelbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/savebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+
+                android:text="Submit" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

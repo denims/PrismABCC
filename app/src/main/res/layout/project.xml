@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:padding="3dp"
+    >
+
+    <View
+        android:background="#d3d3d3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project Analyze phase"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project Build Phase support"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Life Cycle Project"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject4"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project 4"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject5"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project 5"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject6"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project 6"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject7"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project 7"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject8"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project 8"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkProject9"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Project 9"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+
+                android:text="LogOut" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnAddProj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="13dp"
+        android:text="Add Projects" />
+
+
+</RelativeLayout>
