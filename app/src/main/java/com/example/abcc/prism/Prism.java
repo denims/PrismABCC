@@ -35,6 +35,7 @@ public class Prism extends AppCompatActivity {
     CheckBox proj7;
     CheckBox proj8;
     CheckBox proj9;
+    int currButton = 5;
 
     Button btnSubmit;
     Button btnLogout;
@@ -97,14 +98,58 @@ public class Prism extends AppCompatActivity {
             public void onClick(View view) {
                 //show the popup
 
-                CharSequence colors[] = new CharSequence[] {"red", "green", "blue", "black"};
+                final CharSequence projs[] = new CharSequence[] {"Project 10", "Project 11", "Project 12", "Project 13"};
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(Prism.this);
-                builder.setTitle("Pick a color");
-                builder.setItems(colors, new DialogInterface.OnClickListener() {
+                builder.setTitle("Add a project");
+                builder.setItems(projs, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        // the user clicked on colors[which]
+                        //on click
+                        if (currButton == 5){
+                            currButton=6;
+                            System.out.println(projs[which]);
+                           // proj5.setText(which);
+                            proj5.setVisibility(View.VISIBLE);
+                            proj5.setText(projs[which]);
+                            return;
+
+                        }
+                        if (currButton == 6){
+                            currButton=7;
+                            System.out.println(projs[which]);
+                            // proj5.setText(which);
+                            proj6.setVisibility(View.VISIBLE);
+                            proj6.setText(projs[which]);
+                            return;
+
+                        }
+                        if (currButton == 7){
+                            currButton=8;
+                            System.out.println(projs[which]);
+                            // proj5.setText(which);
+                            proj7.setVisibility(View.VISIBLE);
+                            proj7.setText(projs[which]);
+                            return;
+
+                        }
+                        if (currButton == 8){
+                            currButton=9;
+                            System.out.println(projs[which]);
+                            // proj5.setText(which);
+                            proj8.setVisibility(View.VISIBLE);
+                            proj8.setText(projs[which]);
+                            return;
+
+                        }
+                        if (currButton == 9){
+                            System.out.println(projs[which]);
+                            // proj5.setText(which);
+                            proj9.setVisibility(View.VISIBLE);
+                            proj9.setText(projs[which]);
+                            return;
+
+                        }
                     }
                 });
                 builder.show();

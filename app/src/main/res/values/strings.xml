@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Prism</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_cancel">Cancel</string>
+
 </resources>
