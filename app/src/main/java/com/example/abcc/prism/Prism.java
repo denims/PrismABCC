@@ -3,16 +3,12 @@ package com.example.abcc.prism;
 /**
  * Created by shashank on 13/09/2017.
  */
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Application;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -98,7 +94,7 @@ public class Prism extends AppCompatActivity {
             public void onClick(View view) {
                 //show the popup
 
-                final CharSequence projs[] = new CharSequence[] {"Project 10", "Project 11", "Project 12", "Project 13"};
+                final CharSequence projs[] = new CharSequence[] {"Encompass Lifecycle", "Business capabilities", "Encompass triton", "ABCC Demo"};
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(Prism.this);
                 builder.setTitle("Add a project");

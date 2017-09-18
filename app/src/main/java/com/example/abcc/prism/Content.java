@@ -1,27 +1,18 @@
 package com.example.abcc.prism;
 
-/**
- * Created by vittalkambagi on 13/09/2017.
- */
 
-/**
- * Created by vittalkambagi on 13/09/2017.
- */
-import android.app.Activity;
+import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 
-/**
- * Created by snraa on 09/09/17.
- */
 
 public class Content extends AppCompatActivity {
 
@@ -33,13 +24,34 @@ public class Content extends AppCompatActivity {
     EditText editSaturday;
     EditText editSunday;
     TextView timeSheet;
+    Button btnSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("TimeSheet");
         setContentView(R.layout.contentlayout);
+
         init();
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /*int i=Integer.parseInt((editMonday.getText().toString())+
+                        Integer.parseInt(editTuesday.getText().toString())+
+                        Integer.parseInt(editWednesday.getText().toString())+
+                        Integer.parseInt(editThursday.getText().toString())+
+                        Integer.parseInt(editFriday.getText().toString())+
+                        Integer.parseInt(editSaturday.getText().toString())+
+                        Integer.parseInt(editSunday.getText().toString());
+                String s= "Your timesheet for"+ i+"hrs has been approved";
+                Toast.makeText(getApplicationContext(),
+                        s,Toast.LENGTH_SHORT).show();*/
+                Intent intent = new Intent(getApplicationContext(), Prism.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void init() {
@@ -51,6 +63,9 @@ public class Content extends AppCompatActivity {
         editSaturday = (EditText) findViewById(R.id.edithour6);
         editSunday = (EditText) findViewById(R.id.edithour7);
         timeSheet= (TextView) findViewById(R.id.textViewTimeSheet);
+        btnSubmit = (Button) findViewById(R.id.btnSubmit);
+
+        
 
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.DAY_OF_WEEK, cal.MONDAY);
@@ -59,7 +74,12 @@ public class Content extends AppCompatActivity {
         cal.add(Calendar.DAY_OF_WEEK, 6);
         String endWeek = sdf.format(cal.getTime());
         timeSheet.setText("Time sheet for week " + startWeek + " - " + endWeek);
+
+
     }
+
+
+
 
 
 }

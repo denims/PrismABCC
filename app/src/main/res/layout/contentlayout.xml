@@ -78,9 +78,11 @@
             android:maxLength="1"
             android:textAlignment="center" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="fill_parent"
@@ -88,9 +90,9 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:text="Wednesday"
-            android:textSize="15sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#000000"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textSize="15sp" />
 
 
         <EditText
@@ -104,6 +106,7 @@
             android:maxLength="1"
             android:textAlignment="center" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -156,9 +159,11 @@
             android:maxLength="1"
             android:textAlignment="center" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="fill_parent"
@@ -166,9 +171,9 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:text="Saturday"
-            android:textSize="15sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#000000"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textSize="15sp" />
 
 
         <EditText
@@ -182,6 +187,7 @@
             android:maxLength="1"
             android:textAlignment="center" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -208,6 +214,12 @@
             android:maxLength="1"
             android:textAlignment="center" />
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
 
 
 </LinearLayout>
